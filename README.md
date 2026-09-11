@@ -112,15 +112,4 @@ computador onde o `server.py` está rodando.
 - Detecção rodada com OpenCV (`cv2`) para leitura/decodificação/gravação das
   imagens.
 
-## Capturas de tela
 
-> Adicionar aqui, antes da entrega final:
-> - Print do app com a câmera ativa.
-> - Print da imagem capturada.
-> - Print do resultado da detecção exibido no app.
-> - Print do console do servidor mostrando a detecção.
-
----
-*Esta é a especificação mínima do enunciado. Pode ser incrementada (ex.:
-histórico de fotos, múltiplas câmeras, reconexão automática, indicador de
-confiança da detecção, etc.) para ficar mais completa e interessante.*
