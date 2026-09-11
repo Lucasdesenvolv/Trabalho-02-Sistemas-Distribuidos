@@ -1,0 +1,28 @@
+name: photo_detector_app
+description: >
+  App que tira uma foto e a envia via socket TCP para um servidor Python
+  responsável por detectar objetos presentes na imagem.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Captura de foto pela câmera do dispositivo
+  camera: ^0.11.0+2
+
+  # Redimensionar/comprimir a imagem antes de enviar (largura <=1280px, qualidade ~80)
+  image: ^4.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

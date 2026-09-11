@@ -1,0 +1,20 @@
+<!--
+  Adicione estas linhas ao arquivo:
+  android/app/src/main/AndroidManifest.xml
+
+  1) As tags <uses-permission> ficam FORA da tag <application>, logo no início do <manifest>.
+  2) android:usesCleartextTraffic="true" vai DENTRO da tag <application ...>,
+     pois o app se conecta ao servidor via socket TCP simples (sem TLS) na rede local.
+-->
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+<!-- Exemplo de como deve ficar a tag <application>: -->
+<!--
+<application
+    android:label="photo_detector_app"
+    android:usesCleartextTraffic="true"
+    ...>
+-->
